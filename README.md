@@ -13,7 +13,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ## Overview
 
 ### Links
-- [Live Site URL](#https://bguz.github.io/FEM-qr-code-component/)
+- [Live Site URL](https://bguz.github.io/FEM-qr-code-component/)
 
 ## My process
 
