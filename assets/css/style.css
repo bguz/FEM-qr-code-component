@@ -1,3 +1,69 @@
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/outfit/v11/QGYyz_MVcBeNP4NjuGObqx1XmO1I4TC1C4E.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/outfit/v11/QGYyz_MVcBeNP4NjuGObqx1XmO1I4deyC4E.ttf) format('truetype');
+}
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.clear {
+  clear: both;
+}
+h1 {
+  font-size: 2.8rem;
+  text-align: center;
+}
 body {
-  background: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.6rem;
+  background: hsl(212, 45%, 89%);
+  padding: 3rem;
+  height: 100vh;
+}
+.card {
+  background: hsl(0, 0%, 100%);
+  padding: 2rem;
+  border-radius: 2rem;
+  max-width: 35rem;
+}
+.card .card__qr-code {
+  width: 100%;
+}
+.card .card__content {
+  padding: 0 1.5rem;
+}
+.card .card__heading,
+.card .card__paragraph {
+  text-align: center;
+}
+.card .card__heading {
+  color: hsl(218, 44%, 22%);
+}
+.card .card__paragraph {
+  color: hsl(220, 15%, 55%);
 }
