@@ -70,8 +70,22 @@ p {
 .card .card__paragraph {
   color: hsl(220, 15%, 55%);
 }
+.attribution {
+  display: none;
+}
 @media (min-width: 768px) {
   body {
     align-items: center;
+  }
+  .attribution {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(218, 44%, 22%);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    padding: 1.5rem 0;
   }
 }
