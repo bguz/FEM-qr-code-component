@@ -1,3 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+@white: hsl(0, 0%, 100%);
+@light-gray: hsl(212, 45%, 89%);
+@grayish-blue: hsl(220, 15%, 55%);
+@dark-blue: hsl(218, 44%, 22%);
+
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.clear {
+   clear: both;
+}
+h1 {
+    font-size: 2.8rem;
+    text-align: center;
+}
 body {
-    background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.6rem;
+    background: @light-gray;
+    padding: 3rem;
+    height: 100vh;
+}
+.card {
+    background: @white;
+    padding: 2rem;
+    border-radius: 2rem;
+    max-width: 35rem;
+
+    .card__qr-code {
+        width: 100%;
+    }
+
+    .card__content {
+        padding: 0 1.5rem;
+    }
+    .card__heading,
+    .card__paragraph {
+        text-align: center;
+    }
+
+    .card__heading {
+        color: @dark-blue;
+    }
+
+    .card__paragraph {
+        color: @grayish-blue;
+    }
 }
